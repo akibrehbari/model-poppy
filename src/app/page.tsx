@@ -52,6 +52,11 @@ function getModelPhotos(): string[] {
 export const metadata = {
   title: model.name,
   description: model.description,
+  openGraph: {
+    title: model.name,
+    description: model.description,
+    images: [`/models/${model.username}/WhatsApp Image 2026-04-09 at 00.18.46.jpeg`],
+  },
 };
 
 export default function ModelPage() {
